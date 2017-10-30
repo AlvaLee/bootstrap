@@ -18,6 +18,7 @@ childProcess.exec('java -version', function (error) {
     return
   }
 
+  // vnu-jar accepts multiple ignores joined with a `|`
   const ignores = [
     'Attribute “autocomplete” is only allowed when the input type is “color”, “date”, “datetime-local”, “email”, “hidden”, “month”, “number”, “password”, “range”, “search”, “tel”, “text”, “time”, “url”, or “week”.',
     'Attribute “autocomplete” not allowed on element “button” at this point.',
