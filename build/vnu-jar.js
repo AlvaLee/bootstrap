@@ -23,11 +23,12 @@ childProcess.exec('java -version', function (error) {
     'Attribute “autocomplete” not allowed on element “button” at this point.',
     'Attribute “title” not allowed on element “circle” at this point.',
     'Bad value “tablist” for attribute “role” on element “nav”.',
+    // We use holder.js with `data-src` and no `src`; we could work around this, not sure it's worth it.
     'Element “img” is missing required attribute “src”.',
     'Element “legend” not allowed as child of element “div” in this context.*',
     'The “datetime-local” input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.',
-    // the next one we are using it because IE11 doesn't recognise <main>.
-    // So, redundant for modern browsers, but not invalid
+    // The next one we are using it because IE11 doesn't recognise <main>.
+    // So, redundant for modern browsers, but not invalid.
     'The “main” role is unnecessary for element “main”.'
   ].join('|')
 
